@@ -4,6 +4,6 @@
 // 					   		        no mínimo 1 ou mais caracteres alfanumérico, seguido de ponto (.) e 1 ou mais caracteres alfanuméricos
 //	OU
 //	
-//	^[^\.]+$			    ->	Não inicia, contém ou termina com ponto (.)
+//	^\w+$			        ->	Inicia e termina contendo no mínimo 1 caracter alfanumérico
 
-string pattern = @"^(\w+\.\w+){1,}$|^[^\.]+$";
+string pattern = @"^(\w+\.\w+){1,}$|^\w+$";
